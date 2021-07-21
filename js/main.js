@@ -8,11 +8,11 @@ console.log(elements);
 
 btnAdd.addEventListener("click", (e) => {
   if (input.value === "") return;
-  createDeleteElement(input.value);
+  createOrDeleteElement(input.value);
   input.value = " ";
 });
 
-function createDeleteElement(value) {
+function createOrDeleteElement(value) {
   const li = document.createElement("li");
   const liBtn = document.createElement("button");
   const span = document.createElement("span");
