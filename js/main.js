@@ -9,7 +9,7 @@ console.log(elements);
 btnAdd.addEventListener("click", (e) => {
   if (input.value === "") return;
   createOrDeleteElement(input.value);
-  input.value = " ";
+  input.value = "";
 });
 
 function createOrDeleteElement(value) {
